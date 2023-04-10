@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Создание Apple ID</title>
+    <style>
+      @font-face {
+        font-family: "SF-Regular";
+        src: url("Fonts/SF-Pro-Text-Regular.otf") format("opentype");
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body, html {
+        font-family: "SF-Regular";
+        margin: 0;
+        padding: 0;
+      }
+      p,
+      h3,
+      hr,
+      select,
+      input[type='text'],
+      input[type='email'],
+      input[type='tel'],
+      input[type='password'],
+      form > div,
+      form > label {
+        position: relative;
+        display: block;
+        width: 500px;
+        margin: 15px auto;
+      }
+      hr {
+        width: 1024px;
+        border: none;
+        border-bottom: 1px solid #ddd;
+      }
+      select,
+      input[type='text'],
+      input[type='email'],
+      input[type='tel'],
+      input[type='password'] {
+        height: 46px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 0 15px;
+        font-size: 17px;
+        appearance: none;
+      }
+      p {
+        text-align: center;
+      }
+      input + p {
+        text-align: left;
+        color: #999;
+        font-size: 14px;
+        margin-top: -10px;
+        margin-bottom: 15px;
+      }
+      h3 {
+        color: #666;
+        margin-bottom: -10px;
+        font-size: 15px;
+      }
+      form > div > * {
+        display: inline-block;
+        width: auto;
+      }
+      form > label > span {
+        color: #999;
+        font-size: 14px;
+        display: block;
+      }
+      form > label {
+        padding-left: 25px;
+      }
+      form > label > input {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      button {
+        margin: 0 auto;
+        font-size: 17px;
+        line-height: 1.47059;
+        font-weight: 400;
+        letter-spacing: -.022em;
+        font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+        background-color: #0070c9;
+        background: linear-gradient(#42a1ec,#0070c9);
+        border: 1px solid #07c;
+        border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        min-width: 30px;
+        padding: 4px 15px;
+        text-align: center;
+        white-space: nowrap;
+      }
+      nav {
+        width: 100%;
+        display: block;
+        background: #333;
+        height: 44px;
+      }
+      .local {
+        background: #fff;
+      }
+      nav > div {
+        display: flex;
+        justify-content: space-between;
+        width: 1024px;
+        margin: 0 auto;
+      }
+      nav > div > a {
+        color: #d6d6d6;
+        font-size: 12px;
+        line-height: 44px;
+        text-decoration: none;
+      }
+      .local-nav > div > a {
+        line-height: 44px;
+        text-decoration: none;
+      }
+      .container > a:hover{
+        color: #0070c9;
+      }
+      .local-nav > span {
+        line-height: 44px;
+      }
+      nav > div > a:hover {
+        color: #fff;
+      }
+      .main > div > a:nth-child(1) {
+        background-image: url('https://www.apple.com/ac/globalnav/7/ru_RU/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__b5er5ngrzxqq_large.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 15px;
+      }
+      .main > div > a:nth-child(12) {
+        background-image: url('https://www.apple.com/ac/globalnav/7/ru_RU/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__cbllq1gkias2_small.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 20px;
+        margin-top: 12px;
+      }
+      .main > div > a:nth-child(13) {
+        background-image: url('https://www.apple.com/ac/globalnav/7/ru_RU/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__yzte50i47ciu_small.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 15px;
+      }
+      .local-nav span {
+        font-size: 24px;
+        line-height: 2.125;
+      }
+      .container {
+        line-height: 40px;
+        padding-top: 12px;
+      }
+      .container a {
+        margin-left: 24px;
+        color: #333;
+        font-size: 12px;
+        line-height: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="main">
+      <div class="menu-items">
+        <a href=""></a>
+        <a href="">Магазин</a>
+        <a href="">Mac</a>
+        <a href="">IPad</a>
+        <a href="">IPhone</a>
+        <a href="">Watch</a>
+        <a href="">AirPods</a>
+        <a href="">TV и Дом</a>
+        <a href="">Только в Apple</a>
+        <a href="">Аксессуары</a>
+        <a href="">Поддержка</a>
+        <a href=""></a>
+        <a href=""></a>
+      </div>
+    </nav>
+    <nav class="local">
+      <div class="local-nav">
+        <span>Apple ID</span>
+          <div class="container">
+            <a href="https://appleid.apple.com/">Войти в учетную запись</a>
+            <a href="https://appleid.apple.com/account">Создание Apple ID</a>
+            <a href="https://appleid.apple.com/faq">Часто задаваемые вопросы</a>
+          </div>
+      </div>
+    </nav>
+    <hr>
+
+
+    <form action="index.html" method="post">
+
+      <p>Одного Apple ID достаточно для доступа ко всем сервисам Apple. Уже есть Apple ID? <a href="https://iforgot.apple.com/appleid">Найдите его здесь</a></p>
+      <input type="text" name="" value="" placeholder="Имя">
+      <input type="text" name="" value="" placeholder="Фамилия">
+      <h3>СТРАНА/РЕГИОН</h3>
+      <select class="" name="">
+        <option value="ru">Россия</option>
+        <option value="de">Германия</option>
+      </select>
+      <input type="text" name="" value="" placeholder="Дата рождения">
+      <hr>
+
+      <input type="email" name="" value="" placeholder="name@example.com">
+      <p>Это Ваш новый Apple ID.</p>
+      <input type="password" name="" value="" placeholder="Пароль">
+      <input type="password" name="" value="" placeholder="Подтверждение пароля">
+      <hr>
+
+      <select class="" name="">
+        <option value="+7">+7 (Россия)</option>
+        <option value="+49">+49 (Германия)</option>
+      </select>
+      <input type="tel" name="" value="" placeholder="Номер телефона">
+      <p>Введите номер телефона, который всегда доступен. Этот номер будет использоваться для подтверждения личности при выполнении входа на новом устройстве или в новом браузере. За обмен сообщениями и передачу данных может взиматься плата.</p>
+
+      <div>
+        <p>Подтверждение:</p>
+        <div>
+          <input type="radio" name="verify" value=""><label for="">Текстовое  сообщение</label>
+        </div>
+        <div>
+          <input type="radio" name="verify" value=""><label for="">Телефонный  звонок</label>
+        </div>
+      </div>
+      <hr>
+
+      <label for=""><input type="checkbox" name="" value="">Анонсы<span>Получайте сообщения электронной почты и другие уведомления от Apple, в том числе анонсы, рекламные материалы, рекомендации и информацию о новых продуктах, программном обеспечении и услугах компании Apple.</span></label>
+      <label for=""><input type="checkbox" name="" value="">Приложения, музыка, ТВ и многое другое<span>Получайте сообщения электронной почты и другие уведомления от Apple, в том числе новые релизы, эксклюзивный контент, специальные предложения, рекламные материалы и рекомендации для приложений, музыки, фильмов, ТВ, книг, подкастов, Apple Pay и многого другого.</span></label>
+      <hr>
+
+      <button type="submit" name="button">Отправить</button>
+    </form>
+  </body>
+</html>
