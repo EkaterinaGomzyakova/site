@@ -1,0 +1,6 @@
+.logo_desktop {
+    width: 78px;
+    height: 78px;
+    background-image: url('../img/logo_frame.svg');
+    background-size: cover;
+}
