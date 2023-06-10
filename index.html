@@ -1,246 +1,103 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Создание Apple ID</title>
-    <style>
-      @font-face {
-        font-family: "SF-Regular";
-        src: url("Fonts/SF-Pro-Text-Regular.otf") format("opentype");
-      }
-      * {
-        box-sizing: border-box;
-      }
-      body, html {
-        font-family: "SF-Regular";
-        margin: 0;
-        padding: 0;
-      }
-      p,
-      h3,
-      hr,
-      select,
-      input[type='text'],
-      input[type='email'],
-      input[type='tel'],
-      input[type='password'],
-      form > div,
-      form > label {
-        position: relative;
-        display: block;
-        width: 500px;
-        margin: 15px auto;
-      }
-      hr {
-        width: 1024px;
-        border: none;
-        border-bottom: 1px solid #ddd;
-      }
-      select,
-      input[type='text'],
-      input[type='email'],
-      input[type='tel'],
-      input[type='password'] {
-        height: 46px;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        padding: 0 15px;
-        font-size: 17px;
-        appearance: none;
-      }
-      p {
-        text-align: center;
-      }
-      input + p {
-        text-align: left;
-        color: #999;
-        font-size: 14px;
-        margin-top: -10px;
-        margin-bottom: 15px;
-      }
-      h3 {
-        color: #666;
-        margin-bottom: -10px;
-        font-size: 15px;
-      }
-      form > div > * {
-        display: inline-block;
-        width: auto;
-      }
-      form > label > span {
-        color: #999;
-        font-size: 14px;
-        display: block;
-      }
-      form > label {
-        padding-left: 25px;
-      }
-      form > label > input {
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-      button {
-        margin: 0 auto;
-        font-size: 17px;
-        line-height: 1.47059;
-        font-weight: 400;
-        letter-spacing: -.022em;
-        font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-        background-color: #0070c9;
-        background: linear-gradient(#42a1ec,#0070c9);
-        border: 1px solid #07c;
-        border-radius: 4px;
-        color: #fff;
-        cursor: pointer;
-        display: block;
-        min-width: 30px;
-        padding: 4px 15px;
-        text-align: center;
-        white-space: nowrap;
-      }
-      nav {
-        width: 100%;
-        display: block;
-        background: #333;
-        height: 44px;
-      }
-      .local {
-        background: #fff;
-      }
-      nav > div {
-        display: flex;
-        justify-content: space-between;
-        width: 1024px;
-        margin: 0 auto;
-      }
-      nav > div > a {
-        color: #d6d6d6;
-        font-size: 12px;
-        line-height: 44px;
-        text-decoration: none;
-      }
-      .local-nav > div > a {
-        line-height: 44px;
-        text-decoration: none;
-      }
-      .container > a:hover{
-        color: #0070c9;
-      }
-      .local-nav > span {
-        line-height: 44px;
-      }
-      nav > div > a:hover {
-        color: #fff;
-      }
-      .main > div > a:nth-child(1) {
-        background-image: url('https://www.apple.com/ac/globalnav/7/ru_RU/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__b5er5ngrzxqq_large.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 15px;
-      }
-      .main > div > a:nth-child(12) {
-        background-image: url('https://www.apple.com/ac/globalnav/7/ru_RU/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__cbllq1gkias2_small.svg');
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 20px;
-        margin-top: 12px;
-      }
-      .main > div > a:nth-child(13) {
-        background-image: url('https://www.apple.com/ac/globalnav/7/ru_RU/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__yzte50i47ciu_small.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 15px;
-      }
-      .local-nav span {
-        font-size: 24px;
-        line-height: 2.125;
-      }
-      .container {
-        line-height: 40px;
-        padding-top: 12px;
-      }
-      .container a {
-        margin-left: 24px;
-        color: #333;
-        font-size: 12px;
-        line-height: 22px;
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="main">
-      <div class="menu-items">
-        <a href=""></a>
-        <a href="">Магазин</a>
-        <a href="">Mac</a>
-        <a href="">IPad</a>
-        <a href="">IPhone</a>
-        <a href="">Watch</a>
-        <a href="">AirPods</a>
-        <a href="">TV и Дом</a>
-        <a href="">Только в Apple</a>
-        <a href="">Аксессуары</a>
-        <a href="">Поддержка</a>
-        <a href=""></a>
-        <a href=""></a>
-      </div>
-    </nav>
-    <nav class="local">
-      <div class="local-nav">
-        <span>Apple ID</span>
-          <div class="container">
-            <a href="https://appleid.apple.com/">Войти в учетную запись</a>
-            <a href="https://appleid.apple.com/account">Создание Apple ID</a>
-            <a href="https://appleid.apple.com/faq">Часто задаваемые вопросы</a>
-          </div>
-      </div>
-    </nav>
-    <hr>
-
-
-    <form action="index.html" method="post">
-
-      <p>Одного Apple ID достаточно для доступа ко всем сервисам Apple. Уже есть Apple ID? <a href="https://iforgot.apple.com/appleid">Найдите его здесь</a></p>
-      <input type="text" name="" value="" placeholder="Имя">
-      <input type="text" name="" value="" placeholder="Фамилия">
-      <h3>СТРАНА/РЕГИОН</h3>
-      <select class="" name="">
-        <option value="ru">Россия</option>
-        <option value="de">Германия</option>
-      </select>
-      <input type="text" name="" value="" placeholder="Дата рождения">
-      <hr>
-
-      <input type="email" name="" value="" placeholder="name@example.com">
-      <p>Это Ваш новый Apple ID.</p>
-      <input type="password" name="" value="" placeholder="Пароль">
-      <input type="password" name="" value="" placeholder="Подтверждение пароля">
-      <hr>
-
-      <select class="" name="">
-        <option value="+7">+7 (Россия)</option>
-        <option value="+49">+49 (Германия)</option>
-      </select>
-      <input type="tel" name="" value="" placeholder="Номер телефона">
-      <p>Введите номер телефона, который всегда доступен. Этот номер будет использоваться для подтверждения личности при выполнении входа на новом устройстве или в новом браузере. За обмен сообщениями и передачу данных может взиматься плата.</p>
-
-      <div>
-        <p>Подтверждение:</p>
-        <div>
-          <input type="radio" name="verify" value=""><label for="">Текстовое  сообщение</label>
-        </div>
-        <div>
-          <input type="radio" name="verify" value=""><label for="">Телефонный  звонок</label>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаборатория Plantmix</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+<body>
+  <!-- ДВИЖУЩИЕСЯ КРУГИ НА ФОНЕ -->
+  <div id="bg-wrap">
+      <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+      <defs>
+      <radialGradient id="Gradient1" cx="50%" cy="50%" fx="0.441602%" fy="50%" r=".5"><animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255, 0, 255, 1)"></stop><stop offset="100%" stop-color="rgba(255, 0, 255, 0)"></stop></radialGradient>
+      <radialGradient id="Gradient2" cx="50%" cy="50%" fx="2.68147%" fy="50%" r=".5"><animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255, 255, 0, 1)"></stop><stop offset="100%" stop-color="rgba(255, 255, 0, 0)"></stop></radialGradient>
+      <radialGradient id="Gradient3" cx="50%" cy="50%" fx="0.836536%" fy="50%" r=".5"><animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0, 255, 255, 1)"></stop><stop offset="100%" stop-color="rgba(0, 255, 255, 0)"></stop></radialGradient>
+      <radialGradient id="Gradient4" cx="50%" cy="50%" fx="4.56417%" fy="50%" r=".5"><animate attributeName="fx" dur="23s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0, 255, 0, 1)"></stop><stop offset="100%" stop-color="rgba(0, 255, 0, 0)"></stop></radialGradient>
+      <radialGradient id="Gradient5" cx="50%" cy="50%" fx="2.65405%" fy="50%" r=".5"><animate attributeName="fx" dur="24.5s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0,0,255, 1)"></stop><stop offset="100%" stop-color="rgba(0,0,255, 0)"></stop></radialGradient>
+      <radialGradient id="Gradient6" cx="50%" cy="50%" fx="0.981338%" fy="50%" r=".5"><animate attributeName="fx" dur="25.5s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255,0,0, 1)"></stop><stop offset="100%" stop-color="rgba(255,0,0, 0)"></stop></radialGradient>
+      </defs>
+      <rect x="13.744%" y="1.18473%" width="100%" height="100%" fill="url(#Gradient1)" transform="rotate(334.41 50 50)"><animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="7s" repeatCount="indefinite"></animateTransform></rect>
+      <rect x="-2.17916%" y="35.4267%" width="100%" height="100%" fill="url(#Gradient2)" transform="rotate(255.072 50 50)"><animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="12s" repeatCount="indefinite"></animateTransform>
+      </rect>
+      <rect x="9.00483%" y="14.5733%" width="100%" height="100%" fill="url(#Gradient3)" transform="rotate(139.903 50 50)"><animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate><animate attributeName="y" dur="12s" values="0%;25%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="9s" repeatCount="indefinite"></animateTransform>
+      </rect>
+      </svg>
+    </div>
+      <!-- ХЕДЕР -->
+    <div class="header">
+      <!-- ЛОГОТИП -->
+      <div class="logo_desktop"></div>
+      <!-- МЕНЮ В ХЕДЕРЕ -->
+      <div class="menu_button">
+        <div class="menu_line"></div>
+        <h2>Меню</h2>
+        <!-- ИКОНКА МЕНЮ -->
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
         </div>
       </div>
-      <hr>
+    </div>
+    <div class="title">
+      <h1>Селекция</h1>
+      <h1>растений с&nbsp;любыми</h1>
+      <h1>параметрами</h1>
+    </div>
+    <!-- СЕКВЕНЦИЯ  -->
+    <canvas id="scroll_anim" width="300" height="300"></canvas>
+    <!-- КАРТОЧКИ РАСТЕНИЙ -->
+    <!-- КОНТЕЙНЕР ГОРИЗОНТАЛЬНЫЙ -->
+    <div class="horizontal_cards">
+      <!-- КОНТЕЙНЕР ВЕРТИКАЛЬНЫЙ -->
+      <div class="vertical_cards">
+        <div class="product_card">
+          <img src="img/strawberry_onion.png" alt="">
+          <h3>0,1 eth</h3>
+        </div>
+      </div>
 
-      <label for=""><input type="checkbox" name="" value="">Анонсы<span>Получайте сообщения электронной почты и другие уведомления от Apple, в том числе анонсы, рекламные материалы, рекомендации и информацию о новых продуктах, программном обеспечении и услугах компании Apple.</span></label>
-      <label for=""><input type="checkbox" name="" value="">Приложения, музыка, ТВ и многое другое<span>Получайте сообщения электронной почты и другие уведомления от Apple, в том числе новые релизы, эксклюзивный контент, специальные предложения, рекламные материалы и рекомендации для приложений, музыки, фильмов, ТВ, книг, подкастов, Apple Pay и многого другого.</span></label>
-      <hr>
+      <div class="vertical_cards">
+        <div class="product_card">
+          <img src="img/fantasy_flower.png" alt="">
+          <h3>0,1 eth</h3>
+        </div>
+        <div class="product_card">
+          <img src="img/pineapple.png" alt="">
+          <h3>0,1 eth</h3>
+        </div>
+      </div>
+      <div class="vertical_cards">
+        <div class="product_card">
+          <div class="line"></div>
+          <p>Изменение цвета</p>
+        </div>
+        <div class="product_card">
+          <img src="img/strawberry_onion.png" alt="">
+          <h3>0,1 eth</h3>
+        </div>
+      </div>
+      <div class="vertical_cards">
+        <div class="product_card">
+          <img src="img/strawberry_onion.png" alt="">
+          <h3>0,1 eth</h3>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+      <p>Хотите получить уникальное растение?</p>
+      <button type="button" name="compose"><p>Собрать своё растение</p></button>
+    </div>
 
-      <button type="submit" name="button">Отправить</button>
-    </form>
-  </body>
+
+
+
+    <script type="text/javascript" src="js/jq.js"></script>
+</body>
 </html>
