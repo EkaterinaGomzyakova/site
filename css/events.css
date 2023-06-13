@@ -1,0 +1,208 @@
+.event {
+  display: flex;
+  flex-direction: row;
+  width: 53.177vw;
+  margin: 90px auto;
+  transition:all linear 0.7s;
+  padding: 70px;
+
+  /* transform: matrix(4, 0, 0, 4, 0, 1700);
+  opaci_x;
+  z-index: 308; */
+}
+.event.scale{
+  opacity:0.2;
+  transform:scale(0.2,0.2);
+  visibility:hidden;
+}
+
+
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+#wrapper {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 0 30px;
+}
+#wrapper::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.side-bar {
+  width: 20%;
+  position: fixed;
+  top: 30px;
+}
+.side-bar .logo {
+  border-bottom: dashed 1px #ccc;
+  padding-bottom: 20px;
+}
+.side-bar .logo .avatar {
+  height: 90px;
+  width: 90px;
+  background-color: #ccc;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/243277/avatar.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.side-bar .logo .name {
+  font-size: 12px;
+  display: block;
+  text-transform: uppercase;
+}
+.side-bar .logo .title {
+  font-size: 16px;
+}
+.side-bar nav a {
+  color: #4A90E2;
+  margin-top: 20px;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+}
+.side-bar nav a i {
+  margin-right: 6px;
+  opacity: 0.5;
+  -webkit-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+}
+.side-bar nav a:hover i {
+  opacity: 1;
+}
+
+main {
+  width: 75%;
+  box-sizing: border-box;
+  margin-left: 25%;
+}
+
+.project {
+  transition:all linear 0.7s;
+  margin-top: 30px;
+  box-shadow: 0 8px 20px rgba(50, 50, 50, 0.3);
+  background: white;
+  padding: 70px;
+  border-radius: 9px;
+}
+
+.project.scale{
+  opacity:0.2;
+  transform:scale(0.2,0.2);
+  visibility:hidden;
+}
+.project::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.project--image {
+  display: inline-block;
+  width: 25%;
+}
+.project--description {
+  width: 75%;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+.project--description .title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.project--description .about {
+  font-family: "Gentium Book Basic", serif;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.project--description .cta {
+  color: #4A90E2;
+  text-align: right;
+  text-decoration: none;
+}
+.project--description .cta:after {
+  -webkit-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  content: "→";
+  margin-left: 5px;
+}
+.project--description .cta:hover:after {
+  margin-left: 10px;
+}
+
+footer {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: dashed 1px #ccc;
+  font-size: 12px;
+}
+
+
+
+
+.postername {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.poster {
+  width: 28.125vw;
+  height: 42.292vw;
+  border-radius: 15px;
+  background-image: url("../img/events/lectures.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h3 {
+  margin-top: 20px;
+}
+.about {
+  margin: 70px 0 0 30px;
+}
+
+
+
+input {
+  width: 23.438vw;
+  border: none;
+  height: 60px;
+  border-bottom: 2px solid var(--black);
+}
+.text-field_floating-3 {
+  position: relative;
+}
+.text-field_floating-3 .text-field__input {
+  border: none;
+  border-bottom: 2px solid var(--black);
+}
+.text-field_floating-3 .text-field__input:focus {
+  outline: 0;
+  border-bottom: 2px solid var(--blue);
+}
+.text-field_floating-3 .text-field__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transition: color .15s ease-in-out, transform .15s ease-in-out;
+}
+.text-field_floating-3 .text-field__input::-moz-placeholder {
+  color: transparent;
+}
+.text-field_floating-3 .text-field__input::placeholder {
+  color: transparent;
+}
+.text-field_floating-3 .text-field__input:focus,
+.text-field_floating-3 .text-field__input:not(:placeholder-shown) {
+  border-bottom: 2px solid var(--blue);
+}
+.text-field_floating-3 .text-field__input:focus~.text-field__label,
+.text-field_floating-3 .text-field__input:not(:placeholder-shown)~.text-field__label {
+  transform: scale(.85) translateY(-.75rem) translateX(.15rem);
+}

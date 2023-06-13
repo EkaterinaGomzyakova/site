@@ -1,0 +1,8 @@
+.about {
+  margin-top: 40.104vw;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}

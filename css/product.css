@@ -1,0 +1,72 @@
+/* ВЫРАВНИВАНИЕ КОНТЕНТА В СТРОКУ */
+body {
+  display: flex;
+  flex-direction: row;
+}
+/* КРУГ С ОБВОДКОЙ */
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44.427vw;
+  height: 44.427vw;
+  border-radius: 50%;
+  border: 3px dashed var(--black);
+}
+/* КАРТИНКА ПРОДУКТА */
+.circle > img {
+  width: 38.802vw;
+  height: 38.802vw;
+}
+/* ПЕРЕКЛЮЧАТЕЛЬ, 1 КНОПКА */
+.ready {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14.844vw;
+  height: 3.646vw;
+  background: var(--gradient);
+  border-radius: 10px;
+}
+/* ПЕРЕКЛЮЧАТЕЛЬ, 2 КНОПКА */
+.seeds {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.042vw;
+  width: 7.448vw;
+  height: 3.646vw;
+  border-radius: 10px;
+}
+/* ОПИСАНИЕ */
+.description {
+  margin-top: 12.188vw;
+}
+/* ТЕКСТ В ОПИСАНИИ */
+.description > P {
+  margin-top:2.083vw;
+}
+.counter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.counter > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px; /* НЕ ИЗМЕНЯЮТ РАЗМЕР ПРИ РАЗНЫХ РАЗРЕШЕНИЯХ */
+  height: 48px;
+}
+.to_cart {
+  justify-content: space-between;
+}
+.to_cart p, h3 {
+  color: var(--white);
+}
+.minus {
+  margin-right: 15px;
+}
+.plus {
+  margin-left: 15px;
+}
