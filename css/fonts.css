@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'Gramatika';
   src: url('../fonts/Gramatika-Regular.ttf');
-  /* src: local('Bitum'), local('Gramatika-Regular'),
+  /* src: local('Gramatika'), local('Gramatika-Regular'),
   url('../fonts/Fugue.ttf') format('truetype'); */
   font-weight: 400;
   font-style: normal;

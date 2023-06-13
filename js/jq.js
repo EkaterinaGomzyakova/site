@@ -1,6 +1,6 @@
 $(document).ready(function() {
   const html = $("html");
-  const canvas = $("#scroll_anim")[0];
+  const canvas = $("#scroll_anim");
   const context = canvas.getContext("2d");
 
   const currentFrame = index => (
@@ -13,7 +13,7 @@ $(document).ready(function() {
   canvas.width = 1080;
   const img = new Image();
   img.src = currentFrame(1);
-  console.log(img);
+  // console.log(img);
   img.onload = function(){
     context.drawImage(img, 0, 0)
   }
@@ -24,7 +24,7 @@ $(document).ready(function() {
   }
   $(window).on("scroll", () => {
     const scrollTop = $("html").scrollTop();
-    console.log(scrollTop);
+    // console.log(scrollTop);
     const maxScrollTop = $("html").prop("scrollHeight") - $(window).height();
     const scrollFraction = scrollTop / maxScrollTop;
     const frameIndex = Math.min(frameCount - 1, Math.floor(scrollFraction * frameCount));
@@ -40,3 +40,5 @@ $(document).ready(function() {
   };
 
   preloadImages();
+});
+});
