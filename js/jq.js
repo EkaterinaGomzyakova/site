@@ -40,22 +40,3 @@ $(document).ready(function() {
   };
 
   preloadImages();
-
-
-
-
-
-  $(document).ready(function() {
-    //Initial Set for items off screen. I could not find a faster way
-    $('.project').each(function(i, el) {
-      $(this).toggleClass('scale', !in_viewport_or_higher(el));
-    });
-
-    //On every scroll, check to see that the items are either above the viewport or inside it.
-    $(document).scroll(function(e) {
-
-      $('.project').each(function(i, el) {
-        $(this).toggleClass('scale', !in_viewport_or_higher(el));
-      });
-
-    });
