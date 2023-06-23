@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'Fugue';
   src: url('../fonts/Fugue-Regular.ttf');
-  /* src: local('Fugue'), local('Fugue-Regular'),
-  url('../fonts/Fugue.ttf') format('truetype'); */
+  src: local('Fugue'), local('Fugue-Regular'),
+  url('../fonts/Fugue.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Gramatika';
   src: url('../fonts/Gramatika-Regular.ttf');
-  /* src: local('Gramatika'), local('Gramatika-Regular'),
-  url('../fonts/Fugue.ttf') format('truetype'); */
+  src: local('Gramatika'), local('Gramatika-Regular'),
+  url('../fonts/Fugue.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
